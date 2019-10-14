@@ -17,6 +17,10 @@ var logisticsRouter = require('./routes/logistics');
 var businessProcessRouter = require('./routes/businessProcess');
 var messageProcessRouter = require('./routes/message');
 var contactProcessRouter = require('./routes/contact');
+var companyNewsRouter = require('./routes/companyNews');
+
+
+
 
 var app = express();
 
@@ -45,6 +49,8 @@ app.use('/logistics', logisticsRouter);
 app.use('/businessProcess', businessProcessRouter);
 app.use('/message', messageProcessRouter);
 app.use('/contact', contactProcessRouter);
+
+app.use('/companyNews', companyNewsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
