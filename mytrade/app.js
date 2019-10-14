@@ -14,14 +14,13 @@ var transportServiceRouter = require('./routes/transportService');
 var storageRouter = require('./routes/storage');
 var deliveryRouter = require('./routes/delivery');
 var logisticsRouter = require('./routes/logistics');
-
 var businessProcessRouter = require('./routes/businessProcess');
-
-
-
-
+var messageProcessRouter = require('./routes/message');
+var contactProcessRouter = require('./routes/contact');
 
 var app = express();
+
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -43,9 +42,9 @@ app.use('/transportService', transportServiceRouter);
 app.use('/storage', storageRouter);
 app.use('/delivery', deliveryRouter);
 app.use('/logistics', logisticsRouter);
-
 app.use('/businessProcess', businessProcessRouter);
-
+app.use('/message', messageProcessRouter);
+app.use('/contact', contactProcessRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
