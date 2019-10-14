@@ -10,6 +10,15 @@ var aboutsRouter = require('./routes/about');
 var teamRouter = require('./routes/team');
 var honorRouter = require('./routes/honor');
 var fencaiRouter = require('./routes/fencai');
+var transportServiceRouter = require('./routes/transportService');
+var storageRouter = require('./routes/storage');
+var deliveryRouter = require('./routes/delivery');
+var logisticsRouter = require('./routes/logistics');
+
+var businessProcessRouter = require('./routes/businessProcess');
+
+
+
 
 
 var app = express();
@@ -30,6 +39,13 @@ app.use('/about', aboutsRouter);
 app.use('/team', teamRouter);
 app.use('/honor', honorRouter);
 app.use('/fencai', fencaiRouter);
+app.use('/transportService', transportServiceRouter);
+app.use('/storage', storageRouter);
+app.use('/delivery', deliveryRouter);
+app.use('/logistics', logisticsRouter);
+
+app.use('/businessProcess', businessProcessRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
