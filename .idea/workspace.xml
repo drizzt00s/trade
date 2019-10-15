@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="42851669-7805-441e-a629-fd7ee914f10b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytrade/partials/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/partials/nav.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytrade/views/delivery.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/views/delivery.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytrade/views/logistics.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/views/logistics.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytrade/views/storage.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/views/storage.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytrade/views/transportService.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/views/transportService.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mytrade/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/partials/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mytrade/views/admin.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/views/admin.ejs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +54,7 @@
       <updated>1571015714430</updated>
       <workItem from="1571015715750" duration="920000" />
       <workItem from="1571016871555" duration="22353000" />
-      <workItem from="1571101392883" duration="21901000" />
+      <workItem from="1571101392883" duration="22415000" />
     </task>
     <servers />
   </component>
