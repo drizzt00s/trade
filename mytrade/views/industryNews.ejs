@@ -1,0 +1,119 @@
+<html>
+<head>
+    <link rel='stylesheet' href='/stylesheets/public.css' />
+    <link rel='stylesheet' href='/stylesheets/slick.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/jquery.mmenu.all.min.css' />
+
+    <script src="/javascripts/jquery.min.js" type="text/javascript"></script>
+    <script src="/javascripts/AddAndSet.js" type="text/javascript"></script>
+    <script src="/javascripts/jquery.mmenu.min.js" type="text/javascript"></script>
+    <script src="/javascripts/slick.min.js" type="text/javascript"></script>
+    <script src="/javascripts/public.js" type="text/javascript"></script>
+    <script src="/javascripts/jquery.placeholder.min.js" type="text/javascript"></script>
+    <script src="/javascripts/vue.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+
+<%- include ../partials/header.ejs %>
+<%- include ../partials/nav.ejs %>
+<section class="banner-ny clearfix">
+    <img src="/images/e020b348-6b72-4834-8741-e6a8cfd447ae.jpg" class="vcenter">
+</section>
+
+<section class="ny news clearfix" id="newsList">
+    <div class="container">
+        <div class="leftz">
+            <div class="box">
+                <big>新闻资讯</big>
+                <small>News</small>
+                <ul>
+                    <li><a href="/companyNews" title="公司新闻" id="4">公司新闻</a></li>
+                    <li class="active"><a href="/industryNews" title="行业新闻" id="3">行业新闻</a></li>
+                </ul>
+            </div>
+            <div class="box1">
+                <p class="text"> <i><img class="vcenter" src="/images/addr.png" /></i> 上海市嘉定区纬五路228号 </p>
+                <div class="text1">
+                    <i><img class="vcenter" src="/images/left-ico.png" /></i>
+                    <span>服务热线</span>
+                    <em>400&nbsp;886&nbsp;8156</em>
+                </div>
+            </div>
+        </div>
+        <div class="rightz" >
+            <div class="title">
+                <big>行业新闻</big>
+                <div class="crumb">
+                    <a href="/" class="SiteMapPathClass">首页</a> &gt;&gt;
+                    <a href="/companyNews" class="SiteMapPathClass">新闻资讯</a> &gt;&gt;
+                    <span>行业新闻</span>
+                </div>
+            </div>
+            <div class="news-main clearfix">
+                <ul>
+                    <li v-for="eachNewsList in newsList">
+                        <a :href="'/newsDetail?uid=' + eachNewsList.id"> <time> <big>{{eachNewsList.day}}</big> <small>{{eachNewsList.date}}</small> </time>
+                    <div class="txt">
+                    <span>{{eachNewsList.title}}</span>
+                    <p>{{eachNewsList.content}}</p>
+                    </div>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+<!--            <div class="page">-->
+<!--                <a href="./" class="cpb">1</a>-->
+<!--                <a href="hyxw_2.shtml">2</a>-->
+<!--                <a href="hyxw_3.shtml">3</a>-->
+<!--                <a href="hyxw_4.shtml">4</a>-->
+<!--                <a href="hyxw_2.shtml" class="phone1">下一页</a>-->
+<!--                <a href="hyxw_4.shtml">尾页</a>-->
+<!--            </div>-->
+        </div>
+    </div>
+</section>
+
+<%- include ../partials/footer.ejs %>
+
+<script>
+	$(document).ready(function () {
+
+		var getNewsList = function(){
+			$.ajax({
+				type: 'get',
+				url: "/getIndustryNewsList",
+				success: function(data) {
+					IndustryNews.newsList = data;
+					//console.log(JSON.stringify(IndustryNews.newsList));
+				},
+				error: function() {
+                    alert("getNewsList error");
+				}
+			});
+        };
+		getNewsList();
+
+
+
+
+
+
+
+	});
+</script>
+<script>
+    var IndustryNews = new Vue({
+	    el:"#newsList",
+        data:{
+            newsList:[]
+
+        }
+
+    });
+
+</script>
+</body>
+</html>

@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42851669-7805-441e-a629-fd7ee914f10b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mytrade/views/industryNews.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mytrade/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mytrade/partials/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/partials/footer.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mytrade/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/partials/header.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mytrade/partials/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/partials/nav.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mytrade/views/companyNews.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/views/companyNews.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mytrade/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/views/index.ejs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +21,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1SAoMeb6mgElLIFVdrrewsJPLNf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -22,6 +34,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -46,7 +59,8 @@
       <option name="presentableId" value="Default" />
       <updated>1571015714430</updated>
       <workItem from="1571015715750" duration="920000" />
-      <workItem from="1571016871555" duration="20034000" />
+      <workItem from="1571016871555" duration="22353000" />
+      <workItem from="1571101392883" duration="9251000" />
     </task>
     <servers />
   </component>
@@ -58,7 +72,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

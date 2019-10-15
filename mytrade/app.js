@@ -18,14 +18,15 @@ var businessProcessRouter = require('./routes/businessProcess');
 var messageProcessRouter = require('./routes/message');
 var contactProcessRouter = require('./routes/contact');
 var companyNewsRouter = require('./routes/companyNews');
+var industryNewsRouter = require('./routes/industryNews');
+var newsDetailRouter = require('./routes/newsDetail');
 
+
+var industryNewsListRouter = require('./routes/getIndustryNewsList');
 
 
 
 var app = express();
-
-
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -49,8 +50,11 @@ app.use('/logistics', logisticsRouter);
 app.use('/businessProcess', businessProcessRouter);
 app.use('/message', messageProcessRouter);
 app.use('/contact', contactProcessRouter);
-
 app.use('/companyNews', companyNewsRouter);
+app.use('/industryNews', industryNewsRouter);
+app.use('/newsDetail', newsDetailRouter);
+app.use('/getIndustryNewsList', industryNewsListRouter);//get industry news lists
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
