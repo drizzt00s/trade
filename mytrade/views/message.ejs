@@ -4,6 +4,14 @@
     <link rel='stylesheet' href='/stylesheets/slick.css' />
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel='stylesheet' href='/stylesheets/jquery.mmenu.all.min.css' />
+
+    <script src="/javascripts/jquery.min.js" type="text/javascript"></script>
+    <script src="/javascripts/AddAndSet.js" type="text/javascript"></script>
+    <script src="/javascripts/jquery.mmenu.min.js" type="text/javascript"></script>
+    <script src="/javascripts/slick.min.js" type="text/javascript"></script>
+    <script src="/javascripts/public.js" type="text/javascript"></script>
+    <script src="/javascripts/jquery.placeholder.min.js" type="text/javascript"></script>
+    <script src="/javascripts/vue.js" type="text/javascript"></script>
 </head>
 <body>
 <%- include ../partials/header.ejs %>
@@ -12,14 +20,14 @@
     <img src="/images/4f7e91ad-d11e-4851-a44e-7fdae009f38f.jpg" class="vcenter">
 </section>
 
-<section class="ny message-main clearfix">
+<section class="ny message-main clearfix" id="message">
     <div class="container">
         <div class="leftz">
             <div class="box">
-                <big>在线留言</big>
+                <big>在线询价</big>
                 <small>Online Message</small>
                 <ul>
-                    <li class="active"> <a href="/message">在线留言</a> </li>
+                    <li class="active"> <a href="/message">在线询价</a> </li>
                 </ul>
             </div>
             <div class="box1">
@@ -33,10 +41,10 @@
         </div>
         <div class="rightz">
             <div class="title">
-                <big>在线留言</big>
+                <big>在线询价</big>
                 <div class="crumb">
                     <a href="/">首页</a> &gt;&gt;
-                    <span>在线留言</span>
+                    <span>在线询价</span>
                 </div>
             </div>
             <dl class="message clearfix">
@@ -52,7 +60,7 @@
                     <dt>
                         <ul>
                             <li> <textarea type="text" placeholder="留言内容（必填）" id="contents"></textarea><font>留言内容不能为空</font> </li>
-                            <li><a href="javascript:;" id="send">提交留言</a></li>
+                            <li><a href="javascript:;" id="send" v-on:click="pricing()">提交留言</a></li>
                         </ul>
                     </dt>
                 </form>
@@ -74,5 +82,74 @@
     </div>
 </section>
 <%- include ../partials/footer.ejs %>
+<script>
+	$(document).ready(function () {
+
+
+		// var getNewsList = function(){
+		// 	$.ajax({
+		// 		type: 'post',
+		// 		url: "",
+		// 		success: function(data) {
+        //
+		// 		},
+		// 		error: function() {
+		// 			alert("getNewsList error");
+		// 		}
+		// 	});
+		// };
+
+	});
+</script>
+
+<script>
+	var Message = new Vue({
+		el:"#message",
+		data:{
+		},
+		methods:{
+			pricing:function () {
+				var data = {
+					name:"",
+					phone:"",
+					email:"",
+					addr:"",
+					pricingContents:""
+                };
+                var name = $("#username").val();
+                var phone = $("#tel").val();
+                var email = $("#email").val();
+                var addr = $("#addr").val();
+                var pricingContents = $("#contents").val();
+                if(phone === "" || pricingContents === ""){
+                    alert("请填写电话和内容.");
+                    return false;
+                } else {
+	                data.name = name;
+	                data.phone = phone;
+	                data.email = email;
+	                data.addr = addr;
+	                data.pricingContents = pricingContents;
+                    $.ajax({
+                        type: 'post',
+                        url: "/pricing",
+                        data:data,
+                        success: function(data) {
+                            if(data){
+                                alert("提交留言成功，会有专人与您联系");
+                            }
+                        },
+                        error: function() {
+                            alert("pricing error");
+                        }
+                    });
+
+                }
+			}
+        }
+
+	});
+
+</script>
 </body>
 </html>

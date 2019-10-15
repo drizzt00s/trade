@@ -20,11 +20,11 @@ var contactProcessRouter = require('./routes/contact');
 var companyNewsRouter = require('./routes/companyNews');
 var industryNewsRouter = require('./routes/industryNews');
 var newsDetailRouter = require('./routes/newsDetail');
-
-
 var industryNewsListRouter = require('./routes/getIndustryNewsList');
+var pricingRouter = require('./routes/pricing');
+var adminRouter = require('./routes/admin');
 
-
+var pricingListRouter = require('./routes/pricingList');
 
 var app = express();
 // view engine setup
@@ -54,6 +54,12 @@ app.use('/companyNews', companyNewsRouter);
 app.use('/industryNews', industryNewsRouter);
 app.use('/newsDetail', newsDetailRouter);
 app.use('/getIndustryNewsList', industryNewsListRouter);//get industry news lists
+app.use('/newsDetail', newsDetailRouter);
+app.use('/pricing', pricingRouter);
+
+app.use('/admin', adminRouter);
+app.use('/pricingList', pricingListRouter);
+
 
 
 // catch 404 and forward to error handler
