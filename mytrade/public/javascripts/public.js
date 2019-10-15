@@ -37,86 +37,87 @@ $(document).ready(function() {
 });
 
 /*roll*/
-$(function() {
-	$('.home-casemain').slick({
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		autoplay: true,
-		arrows: true,
-		dots: false,
-		autoplaySpeed: 3000,
-		speed: 600,
-		responsive: [{
-				breakpoint: 991,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 3,
-					infinite: true,
-				}
-			}, {
-				breakpoint: 767,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2
-				}
-			}, {
-				breakpoint: 321,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1
-				}
-			}
-
-		]
-	});
-});
-$(function() {
-	$('.home-title').slick({
-		slidesToShow: 5,
-		slidesToScroll: 1,
-		autoplay: true,
-		arrows: false,
-		dots: false,
-		autoplaySpeed: 3000,
-		speed: 600,
-		responsive: [{
-				breakpoint: 991,
-				settings: {
-					slidesToShow: 4,
-					slidesToScroll: 3,
-					infinite: true,
-				}
-			}, {
-				breakpoint: 767,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 2
-				}
-			}, {
-				breakpoint: 480,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1
-				}
-			}
-
-		]
-
-	});
-});
-
-
-/*banner*/
-$(function() {
-	$('.banner-phone').slick({
-		dots:false,
-		arrows: true,
-		centerPadding: 0,
-		slidesToShow: 1,
-		autoplaySpeed:2500,
-		speed: 800,
-	});
-});
+// $(function() {
+//
+// 	$('.home-casemain').slick({
+// 		slidesToShow: 4,
+// 		slidesToScroll: 1,
+// 		autoplay: true,
+// 		arrows: true,
+// 		dots: false,
+// 		autoplaySpeed: 3000,
+// 		speed: 600,
+// 		responsive: [{
+// 				breakpoint: 991,
+// 				settings: {
+// 					slidesToShow: 3,
+// 					slidesToScroll: 3,
+// 					infinite: true,
+// 				}
+// 			}, {
+// 				breakpoint: 767,
+// 				settings: {
+// 					slidesToShow: 2,
+// 					slidesToScroll: 2
+// 				}
+// 			}, {
+// 				breakpoint: 321,
+// 				settings: {
+// 					slidesToShow: 1,
+// 					slidesToScroll: 1
+// 				}
+// 			}
+//
+// 		]
+// 	});
+// });
+// $(function() {
+// 	$('.home-title').slick({
+// 		slidesToShow: 5,
+// 		slidesToScroll: 1,
+// 		autoplay: true,
+// 		arrows: false,
+// 		dots: false,
+// 		autoplaySpeed: 3000,
+// 		speed: 600,
+// 		responsive: [{
+// 				breakpoint: 991,
+// 				settings: {
+// 					slidesToShow: 4,
+// 					slidesToScroll: 3,
+// 					infinite: true,
+// 				}
+// 			}, {
+// 				breakpoint: 767,
+// 				settings: {
+// 					slidesToShow: 3,
+// 					slidesToScroll: 2
+// 				}
+// 			}, {
+// 				breakpoint: 480,
+// 				settings: {
+// 					slidesToShow: 2,
+// 					slidesToScroll: 1
+// 				}
+// 			}
+//
+// 		]
+//
+// 	});
+// });
+//
+//
+//
+// $(function() {
+// 	$('.banner-phone').slick({
+// 		dots:false,
+// 		arrows: true,
+// 		centerPadding: 0,
+// 		slidesToShow: 1,
+// 		autoplaySpeed:2500,
+// 		speed: 800,
+// 	});
+// });
 
 /*pc-banner*/
 $(document).ready(function() {
