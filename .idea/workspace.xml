@@ -3,25 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="42851669-7805-441e-a629-fd7ee914f10b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytrade/partials/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/partials/footer.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytrade/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/partials/header.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytrade/public/javascripts/public.js" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/public/javascripts/public.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytrade/public/json/pricing.json" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/public/json/pricing.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytrade/routes/getIndustryNewsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/routes/getIndustryNewsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytrade/views/about.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/views/about.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytrade/views/businessProcess.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/views/businessProcess.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytrade/views/companyNews.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/views/companyNews.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytrade/views/contact.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/views/contact.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mytrade/partials/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/partials/nav.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mytrade/views/delivery.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/views/delivery.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytrade/views/fencai.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/views/fencai.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytrade/views/honor.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/views/honor.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytrade/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/views/index.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytrade/views/industryNews.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/views/industryNews.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mytrade/views/logistics.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/views/logistics.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytrade/views/message.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/views/message.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytrade/views/newsDetail.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/views/newsDetail.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mytrade/views/storage.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/views/storage.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytrade/views/team.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/views/team.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mytrade/views/transportService.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/mytrade/views/transportService.ejs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,7 +57,7 @@
       <updated>1571015714430</updated>
       <workItem from="1571015715750" duration="920000" />
       <workItem from="1571016871555" duration="22353000" />
-      <workItem from="1571101392883" duration="21127000" />
+      <workItem from="1571101392883" duration="21901000" />
     </task>
     <servers />
   </component>
